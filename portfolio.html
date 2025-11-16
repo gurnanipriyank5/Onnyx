@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Portfolio Tracker - Onnyx</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="../index.html" class="logo">Onnyx</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Portfolio Hero -->
+  <section style="background: linear-gradient(135deg, #0f172a, #1e40af); color: white; padding: 3rem 0;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Virtual Portfolio Tracker</h1>
+      <p style="color: #cbd5e1; font-size: 1.1rem;">Track your investments and watch your portfolio grow</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="container">
+    <div class="portfolio-section">
+      <h2 style="margin-top: 0; margin-bottom: 2rem;">My Holdings</h2>
+      
+      <table class="portfolio-table">
+        <thead>
+          <tr>
+            <th>Stock Name</th>
+            <th>Quantity</th>
+            <th>Buy Price</th>
+            <th>Current Price</th>
+            <th>Total Value</th>
+            <th>Gain/Loss</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>TCS</strong></td>
+            <td>50</td>
+            <td>₹3,100</td>
+            <td>₹3,245.50</td>
+            <td>₹162,275</td>
+            <td style="color: #10b981;"><strong>+₹7,275 (+4.68%)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>INFY</strong></td>
+            <td>30</td>
+            <td>₹1,800</td>
+            <td>₹1,852.75</td>
+            <td>₹55,582.50</td>
+            <td style="color: #10b981;"><strong>+₹1,582.50 (+2.93%)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>RELIANCE</strong></td>
+            <td>20</td>
+            <td>₹2,750</td>
+            <td>₹2,856.95</td>
+            <td>₹57,139</td>
+            <td style="color: #10b981;"><strong>+₹2,139 (+3.88%)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>WIPRO</strong></td>
+            <td>40</td>
+            <td>₹525</td>
+            <td>₹515.40</td>
+            <td>₹20,616</td>
+            <td style="color: #ef4444;"><strong>-₹384 (-1.83%)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>SBIN</strong></td>
+            <td>60</td>
+            <td>₹680</td>
+            <td>₹685.45</td>
+            <td>₹41,127</td>
+            <td style="color: #10b981;"><strong>+₹327 (+0.80%)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>ITC</strong></td>
+            <td>100</td>
+            <td>₹475</td>
+            <td>₹465.20</td>
+            <td>₹46,520</td>
+            <td style="color: #ef4444;"><strong>-₹980 (-2.06%)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Portfolio Summary -->
+      <div style="margin-top: 2rem;">
+        <div class="portfolio-summary">
+          <h3>Total Portfolio Value</h3>
+          <div class="portfolio-value">₹383,259.50</div>
+          <p style="margin-top: 1rem; font-size: 0.95rem;">Total Investment: ₹361,150 | Total Gain: +₹22,109.50 (+6.12%)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Statistics -->
+  <section class="container">
+    <h2>Portfolio Breakdown</h2>
+    <p class="subtitle">Distribution of your holdings</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Total Holdings</h3>
+        <p style="font-size: 1.5rem; color: var(--primary-color); margin: 0.5rem 0; font-weight: 700;">6</p>
+        <p style="color: var(--text-light);">Different stocks in portfolio</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <h3>Total Invested</h3>
+        <p style="font-size: 1.5rem; color: var(--primary-color); margin: 0.5rem 0; font-weight: 700;">₹361,150</p>
+        <p style="color: var(--text-light);">Capital committed</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Total Returns</h3>
+        <p style="font-size: 1.5rem; color: #10b981; margin: 0.5rem 0; font-weight: 700;">+₹22,109.50</p>
+        <p style="color: var(--text-light);">Overall profit so far</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Return Percentage</h3>
+        <p style="font-size: 1.5rem; color: #10b981; margin: 0.5rem 0; font-weight: 700;">+6.12%</p>
+        <p style="color: var(--text-light);">Overall percentage gain</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Performers -->
+  <section style="background-color: var(--light-bg);">
+    <div class="container">
+      <h2>Best & Worst Performers</h2>
+      <p class="subtitle">Your top gaining and losing positions</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+          <h3 style="color: #10b981; margin-bottom: 1rem;">🏆 Top Gainer</h3>
+          <div style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;">TCS</div>
+          <div style="color: #10b981; font-size: 1.1rem; margin-bottom: 1rem;">+₹7,275 (+4.68%)</div>
+          <p style="color: var(--text-light);">50 shares worth ₹162,275</p>
+        </div>
+        
+        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+          <h3 style="color: #ef4444; margin-bottom: 1rem;">📉 Top Loser</h3>
+          <div style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;">ITC</div>
+          <div style="color: #ef4444; font-size: 1.1rem; margin-bottom: 1rem;">-₹980 (-2.06%)</div>
+          <p style="color: var(--text-light);">100 shares worth ₹46,520</p>
+        </div>
+
+        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem;">⭐ Largest Position</h3>
+          <div style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;">TCS</div>
+          <div style="color: var(--primary-color); font-size: 1.1rem; margin-bottom: 1rem;">₹162,275 (42.34%)</div>
+          <p style="color: var(--text-light);">50 shares at ₹3,245.50</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Actions -->
+  <section class="container">
+    <h2>Quick Guide</h2>
+    <p class="subtitle">Tips for managing your virtual portfolio</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h3>Diversify</h3>
+        <p>Spread your investments across different sectors and companies to reduce risk and maximize returns.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⏰</div>
+        <h3>Monitor Regularly</h3>
+        <p>Check your portfolio daily to stay updated with market trends and make informed decisions.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📚</div>
+        <h3>Learn & Research</h3>
+        <p>Use our educational resources to understand market analysis and improve your trading skills.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Set Goals</h3>
+        <p>Define your investment goals and track your progress towards achieving your financial targets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About Onnyx</h4>
+          <p style="color: #cbd5e1; font-size: 0.9rem;">Onnyx is your trusted platform for smart, secure, and simple stock trading without commission.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Risk Disclosure</a></li>
+            <li><a href="#">Compliance</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Onnyx. All rights reserved. | Made with ❤️ for investors</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
