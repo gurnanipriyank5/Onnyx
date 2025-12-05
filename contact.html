@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <!-- Navigation -->
+  
   <nav>
     <div class="nav-container">
       <a href="../index.html" class="logo">Onnyx</a>
@@ -25,7 +25,6 @@
     </div>
   </nav>
 
-  <!-- Contact Hero -->
   <section style="background: linear-gradient(135deg, #0f172a, #1e40af); color: white; padding: 4rem 0;">
     <div class="container">
       <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Get in Touch</h1>
@@ -33,10 +32,9 @@
     </div>
   </section>
 
-  <!-- Contact Information & Form -->
   <section class="container">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
-      <!-- Contact Info -->
+      
       <div>
         <h2>Contact Information</h2>
         <p style="color: var(--text-light); margin-bottom: 2rem;">Reach out to us through any of these channels. We're available 24/7.</p>
@@ -72,7 +70,6 @@
         </div>
       </div>
 
-      <!-- Contact Form -->
       <div class="contact-form">
         <h2 style="margin-top: 0;">Send us a Message</h2>
         <form>
@@ -82,8 +79,9 @@
           </div>
 
           <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required>
+            <span id="contactEmailError" style="color: #ef4444; font-size: 0.875rem; margin-top: 0.25rem;"></span>
           </div>
 
           <div class="form-group">
@@ -93,7 +91,7 @@
 
           <div class="form-group">
             <label for="category">Category</label>
-            <select style="padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" required>
+            <select id="category" style="padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0.5rem; font-size: 1rem; font-family: inherit;" required>
               <option value="">Select a category</option>
               <option value="support">Technical Support</option>
               <option value="billing">Billing & Subscription</option>
@@ -114,7 +112,6 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
   <section style="background-color: var(--light-bg);">
     <div class="container">
       <h2>Frequently Asked Questions</h2>
@@ -148,7 +145,6 @@
     </div>
   </section>
 
-  <!-- Support Channels -->
   <section class="container">
     <h2>Multiple Ways to Reach Us</h2>
     <p class="subtitle">Choose the communication channel that works best for you</p>
@@ -169,14 +165,13 @@
         <p>Call our dedicated support team at +91-8000-000-000 for urgent assistance.</p>
       </div>
       <div class="card">
-        <div class="card-icon">🐦</div>
+        <div class="card-icon">🦜</div>
         <h3>Social Media</h3>
         <p>DM us on Twitter or Facebook for quick responses to your questions.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -217,5 +212,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./email.js"></script>
 </body>
 </html>
